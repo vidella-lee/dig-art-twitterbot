@@ -1,0 +1,55 @@
+{
+  "name": "dig-art-twitterbot",
+  "version": "1.0.0",
+  "description": "Twitter bot to retweet concept and digital art.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "snyk test && node index.js",
+    "snyk-protect": "snyk protect contributor --yes",
+    "prepublish": "npm run snyk-protect",
+    "deploy": "now -E",
+    "format": "prettier es5 --no-semi --single-quote --write src/**/*.js",
+    "contrib": "contributor"
+  },
+  "pre-commit": [
+    "format"
+  ],
+  "devDependencies": {
+    "contributor": "0.1.25",
+    "prettier": "1.7.4"
+  },
+  "dependencies": {
+    "console.lol": "0.1.2",
+    "dotenv": "4.0.0",
+    "snyk": "1.46.0",
+    "twit": "^2.2.11",
+    "unique-random-array": "1.0.0"
+  },
+  "now": {
+    "alias": "dig-art-twitterbot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidella-lee/dig-art-twitterbot.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "art"
+  ],
+  "author": "Liz Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vidella-lee/dig-art-twitterbot/issues"
+  },
+  "homepage": "https://github.com/vidella-lee/dig-art-twitterbot#readme",
+  "snyk": true,
+  "contributors": [
+    {
+      "name": "Liz Nelson",
+      "email": null,
+      "url": "https://github.com/vidella-lee"
+    }
+  ]
+}
