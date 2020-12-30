@@ -1,2 +1,2 @@
 # dig-art-twitterbot
-Twitter bot to retweet concept and digital art.
+Twitter bot that retweets concept and digital art as inspiration for artists.
